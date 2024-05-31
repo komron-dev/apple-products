@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav id="skip">
+            <h2 class="visually-hidden">Jump to content</h2>
+            <a href="#steveJobs" class="visually-hidden-focusable">Jump to content</a>
+        </nav>
+
+        <button id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <h1>Survey</h1>
+        <nav id="mainmenu">
+            <a href="index.html">Homepage</a>
+            | <a href="iPhone.html">iPhone</a>
+            | <a href="macBook.html">MacBook</a>
+            | <a href="visionPro.html">Apple Vision Pro</a>
+            | <b>Survey</b>
+        </nav>
+
+        <div id="intro">
+            <p>Now, we’d like to grab your attention to a little survey. 
+                We're thrilled to hear your thoughts on the iPhone and MacBook lineup. 
+                Take a moment to share your opinions with us. 
+                Your feedback helps us understand what you value most in these iconic products.</p>
+        </div>
+    </header>
+
+    <main>
+        <form action="mailto:musor.akkount7@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend><strong>Personal information</strong></legend>
+                <label for="fname">Firstname</label><br>
+                <input type="text" name="fname" id="fname" size="30" maxlength="40" placeholder="e.g. John" required><br>
+                
+                <label for="lname">Lastname</label><br>
+                <input type="text" name="lname" id="lname" size="30" maxlength="50" placeholder="e.g. Doe"><br>
+            
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email" size="60" maxlength="60" placeholder="example@mail.com" required><br>
+
+                <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                <label for="newsletter">I'd like to recieve news about the latest Apple products</label>
+            </fieldset>
+            <br><br>
+            <fieldset id="questions">
+                <legend><strong>Questions about the Apple products</strong></legend>
+                <p>Which iPhone model was the worthiest for its price?<br>
+                    <input type="radio" name="iPhone" id="i1" value="1">
+                    <label for="i1">iPhone X</label><br>
+                    <input type="radio" name="iPhone" id="i2" value="2">
+                    <label for="i2">iPhone 6s</label><br>
+                    <input type="radio" name="iPhone" id="i3" value="3">
+                    <label for="i3">iPhone 13 Pro</label><br>
+                    <input type="radio" name="iPhone" id="i4" value="4">
+                    <label for="i4">iPhone 15 Pro Max</label><br>
+                    <input type="radio" name="iPhone" id="i5" value="5">
+                    <label for="i5">iPhone 11</label><br>
+                </p>
+
+                <p>Which MacBook model was the worthiest for its price?<br>
+                    <input type="radio" name="macBook" id="m1" value="1">
+                    <label for="m1">MacBook M1 Air</label><br>
+                    <input type="radio" name="macBook" id="m2" value="2">
+                    <label for="m2">MacBook Pro Intel 9</label><br>
+                    <input type="radio" name="macBook" id="m3" value="3">
+                    <label for="m3">MacBook Pro M1 Pro</label><br>
+                    <input type="radio" name="macBook" id="m4" value="4">
+                    <label for="m4">MacBook Pro M3 Max</label><br>
+                    <input type="radio" name="macBook" id="m5" value="5">
+                    <label for="m5">MacBook Air M2</label><br>
+                </p>
+
+                <label for="story"><strong>Your suggestions to improve Apple products</strong></label><br>
+                <textarea name="story" id="story" cols="70" rows="10" placeholder="Feel free to share even your critical feedback too..." maxlength="1000"></textarea>
+            </fieldset>
+
+            <br>
+            <div id="form-button">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p><b>Contact info</b></p>
+        <address>
+            <p>Author: Komron Fayziboev 
+            <br> Address: 1000, Apple utca, Budapest
+            <br>Phone: +36207777777
+            <br>Email: <a href="mailto:komronstudent@gmail.com">komronstudent@gmail.com</a>
+            </p>
+        </address>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
